@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 from example.api.models import Post, User
+import django
+django.setup()
 
 bodies = ['This is a great post', 'Another thing I wanted to share']
 

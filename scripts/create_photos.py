@@ -4,6 +4,8 @@ import os.path
 from example.api.models import Photo, Post
 
 from django.conf import settings
+import django
+django.setup()
 
 sample_dir = 'samples'
 sample_images = [os.path.join(sample_dir, fn) for fn in os.listdir(os.path.join(settings.MEDIA_ROOT, sample_dir))]
